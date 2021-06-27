@@ -1,9 +1,10 @@
 import '../styles/room.scss';
-import deleteImg from '../assets/images/delete.svg';
 
-import { useParams, useHistory } from 'react-router-dom';
-import checkImg from '../assets/images/check.svg';
+import { useHistory, useParams } from 'react-router-dom';
+
 import answerImg from '../assets/images/answer.svg';
+import checkImg from '../assets/images/check.svg';
+import deleteImg from '../assets/images/delete.svg';
 import logoImg from '../assets/images/logo.svg';
 import { Button } from '../components/Button';
 import { Question } from '../components/Question';
