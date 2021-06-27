@@ -13,7 +13,7 @@ import { database } from '../services/firebase';
 export function Home() {
     const history = useHistory();
     const { user, signInWithGoogle } = useAuth();
-    const [ roomCode, setRoomCode ] = useState('');
+    const [roomCode, setRoomCode] = useState('');
 
     async function handleCreateRoom() {
         if (!user) {
@@ -25,19 +25,19 @@ export function Home() {
     async function handleJoinRoom(event: FormEvent) {
         event.preventDefault();
 
-        if(roomCode.trim() === '') {
+        if (roomCode.trim() === '') {
             return;
         }
 
         console.log(roomCode);
         const roomRef = await database.ref(`rooms/${roomCode}`).get();
 
-        if(!roomRef.exists()) {
-           alert('Room does not exists.'); 
-           return;
+        if (!roomRef.exists()) {
+            alert('Room does not exists.');
+            return;
         }
 
-        if(roomRef.val().endedAt) {
+        if (roomRef.val().endedAt) {
             alert('Room alredy close');
             return;
         }
