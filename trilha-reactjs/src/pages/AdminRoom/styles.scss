@@ -116,6 +116,11 @@
     
             .question-list {
                 margin-top: 2rem;
+
+                button:nth-child(4n) {
+                    cursor: default;
+                    pointer-events: none;
+                  }
             }
         }
 
