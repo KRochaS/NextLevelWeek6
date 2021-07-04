@@ -5,5 +5,5 @@
 <br/>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/KRochaS/NextLevelWeek6/28dc746f168573776917fdc73e35daae4d90b7a4/.github/workflows/logo-github.svg" width="220" >
+  <img src="https://raw.githubusercontent.com/KRochaS/NextLevelWeek6/f5e0f418cabb8d966980af92867792d9263c4ef8/.github/logo-github.svg" width="220" >
 </p>
