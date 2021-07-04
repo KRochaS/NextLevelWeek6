@@ -1,7 +1,7 @@
 import './styles.scss';
 
 import { FormEvent, useState } from 'react';
-import { useHistory, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 import logoImg from '../../assets/images/logo.svg';
 import { Button } from '../../components/Button';
@@ -20,7 +20,6 @@ type RoomParams = {
 
 export function Room() {
     const { user, signInWithGoogle } = useAuth();
-    const history = useHistory();
     const params = useParams<RoomParams>();
     const [newQuestion, setNewQuestion] = useState('');
     const roomId = params.id;
@@ -62,7 +61,6 @@ export function Room() {
             await signInWithGoogle();
         }
     }
-    
 
     async function handleLikeQuestion(questionId: string, likeId: string | undefined) {
         if (likeId) {
