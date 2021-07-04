@@ -10,7 +10,7 @@
 
     &.highlighted {
         background: #F4F0FF;
-        border: 1px solid #835afd;
+        border: 0.063rem solid #835afd;
 
         footer .user-info span {
             color: #29292e;
@@ -53,7 +53,7 @@
 
         > div { 
             display: flex;
-            gap: 16px;
+            gap: 1rem;
         }
 
         button {
