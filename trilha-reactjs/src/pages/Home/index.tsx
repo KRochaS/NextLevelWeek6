@@ -5,14 +5,18 @@ import { useHistory } from 'react-router-dom';
 
 import googleIconImg from '../../assets/images/google-icon.svg';
 import illustration from '../../assets/images/illustration.svg';
+import moon from '../../assets/images/moon.svg';
+import sun from '../../assets/images/sun.svg';
 import logoImg from '../../assets/images/logo.svg';
 import { Button } from '../../components/Button';
 import { useAuth } from '../../hooks/useAuth';
 import { database } from '../../services/firebase';
+import { useTheme } from '../../hooks/useTheme';
 
 export function Home() {
     const history = useHistory();
     const { user, signInWithGoogle } = useAuth();
+    const { theme, toggleTheme } = useTheme();
     const [roomCode, setRoomCode] = useState('');
 
     async function handleCreateRoom() {
@@ -47,9 +51,9 @@ export function Home() {
 
 
     return (
-        <div className="row m-0 p-0 vh-100">
+        <div className={"row m-0 p-0 vh-100 " }>
 
-            <aside className="col-6 p-5 d-none d-lg-block d-md-block">
+            <aside className={"col-6 p-5 d-none d-lg-block d-md-block " + theme}>
                 <div className="mt-5">
                     <img src={illustration} alt="Ilustração simbolizando perguntas e respostas" />
 
@@ -60,7 +64,15 @@ export function Home() {
                 <p> Tire as dúvidas da sua audiência em tempo real</p>
             </aside>
 
-            <div className="col-12 col-md-6 bg-blue">
+            <div className="col-12 col-md-6">
+                <div className="row">
+                    <div className="col-12 d-flex justify-content-end mt-4">
+                        <button type="button" onClick={toggleTheme}>
+                            <img src={theme === 'light' ? moon : sun} alt="moonOrSun" />
+                        </button>
+
+                    </div>
+                </div>
                 <main className="d-flex justify-content-center align-items-center h-100">
                     <div className="main-content">
                         <img src={logoImg} alt="Letmeask" />

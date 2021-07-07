@@ -1,3 +1,5 @@
+
+
 aside {
     background: #835afd;
     color: #fff;
@@ -22,7 +24,21 @@ aside {
         margin-top: 1rem;
         color: #f8f8f8;
     }
+
+    transition: 0.3s;
+
+    &.dark {
+        
+            background: #483C67;
+        
+    }
+   
 }
+
+button {
+    border: none;
+}
+
 main {
     flex: 8;
     padding: 0 2rem;
