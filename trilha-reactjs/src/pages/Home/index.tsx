@@ -8,6 +8,7 @@ import illustration from '../../assets/images/illustration.svg';
 import moon from '../../assets/images/moon.svg';
 import sun from '../../assets/images/sun.svg';
 import logoImg from '../../assets/images/logo.svg';
+import logoDarkImg from '../../assets/images/logo-dark.svg';
 import { Button } from '../../components/Button';
 import { useAuth } from '../../hooks/useAuth';
 import { database } from '../../services/firebase';
@@ -64,7 +65,7 @@ export function Home() {
                 <p> Tire as dúvidas da sua audiência em tempo real</p>
             </aside>
 
-            <div className="col-12 col-md-6">
+            <div className={"col-12 col-md-6 " + theme}>
                 <div className="row">
                     <div className="col-12 d-flex justify-content-end mt-4">
                         <button type="button" onClick={toggleTheme}>
@@ -73,9 +74,9 @@ export function Home() {
 
                     </div>
                 </div>
-                <main className="d-flex justify-content-center align-items-center h-100">
+                <main className="d-flex justify-content-center align-items-center h-85">
                     <div className="main-content">
-                        <img src={logoImg} alt="Letmeask" />
+                        <img src={theme === 'light' ? logoImg : logoDarkImg} alt="Letmeask" />
                         <button onClick={handleCreateRoom} className="create-room">
                             <img src={googleIconImg} alt="Logo do Google" />
                             Crie sua sala com o Google
@@ -85,7 +86,7 @@ export function Home() {
                             Ou entre em uma sala
                         </div>
 
-                        <form onSubmit={handleJoinRoom}>
+                        <form className={theme} onSubmit={handleJoinRoom}>
                             <input
                                 type="text"
                                 placeholder="Digite o código da sala"
