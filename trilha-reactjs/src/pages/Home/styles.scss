@@ -25,7 +25,7 @@ aside {
         color: #f8f8f8;
     }
 
-    transition: 0.3s;
+    transition: 0.5s;
 
     &.dark {
         
@@ -35,19 +35,21 @@ aside {
    
 }
 
+div.dark {
+    transition: 0.5s;
+    background: #2E3034;
+}
+
+
 button {
     border: none;
+    background-color: transparent;
 }
 
 main {
-    flex: 8;
-    padding: 0 2rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    height: 85%;
 }
+
 
 .main-content {
     display: flex;
@@ -68,6 +70,20 @@ main {
     }
 
     form {
+
+        &.dark {
+            input[type="text"] {
+                background-color : #4C4C4C;
+                color: #FFF;
+              }
+
+            button {
+                background-color: #483C67;
+            }
+
+           
+        }
+
         input {
             height: 3.125rem;
             border-radius: 0.5rem;
@@ -76,9 +92,14 @@ main {
             border: 1px solid #a8a8b3;
         }
 
+      
+
         button {
             margin-top: 1rem;
+
+           
         }
+
 
         button, input {
             width: 100%;
