@@ -4,12 +4,14 @@ import { FormEvent, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 import logoImg from '../../assets/images/logo.svg';
+import logoDarkImg from '../../assets/images/logo-dark.svg';
 import { Button } from '../../components/Button';
 import { Question } from '../../components/Question';
 import { RoomCode } from '../../components/RoomCode';
 import { useAuth } from '../../hooks/useAuth';
 import { useRoom } from '../../hooks/useRoom';
 import { database } from '../../services/firebase';
+import { useTheme } from '../../hooks/useTheme';
 
 
 
@@ -20,6 +22,7 @@ type RoomParams = {
 
 export function Room() {
     const { user } = useAuth();
+    const { theme } = useTheme();
     const params = useParams<RoomParams>();
     const [newQuestion, setNewQuestion] = useState('');
     const roomId = params.id;
@@ -68,10 +71,10 @@ export function Room() {
 
 
     return (
-        <div id="page-room" className="row">
-            <header className="col-12">
+        <div id="page-room" className={theme} >
+            <header className={"col-12 "+ theme }>
                 <div className="content">
-                    <img src={logoImg} alt="Letmeask" />
+                    <img src={theme === 'light'? logoImg : logoDarkImg} alt="Letmeask" />
 
                     <RoomCode code={roomId} />
 
