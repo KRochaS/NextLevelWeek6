@@ -1,5 +1,15 @@
 #page-room {
+
+    min-height: 100vh;
+
+    &.dark {
+        background: #2E3034;
+    }
     header {
+
+        &.dark {
+            background: #2E3034;
+        }
         padding: 1.5rem;
         border-bottom: 1px solid #e2e2e2;
 
@@ -32,6 +42,9 @@
     }
 
     main  {
+
+      
+
         max-width: 50rem;
         margin: 0 auto;
 
