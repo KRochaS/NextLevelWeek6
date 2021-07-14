@@ -1,4 +1,12 @@
+
 .room-code {
+
+    &.dark {
+        background: #2E3034;
+        color: #FFF;
+        border: 0.063rem solid #483C67; 
+    }
+
     height: 2.5rem;
     border-radius: 0.5rem;
     overflow: hidden;
@@ -14,6 +22,13 @@
     
     display: flex;
   
+    &.dark {
+
+        div {
+            background: #483C67;  
+        }
+    }
+
     div {
       background: #835afd;
       padding: 0 0.75rem;
