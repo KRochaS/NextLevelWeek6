@@ -90,7 +90,7 @@ export function Room() {
 
             <main className="col-12 p-3 d-flex flex-column align-items-center h-100">
                 <div className="container">
-                    <div className="room-title">
+                    <div className={"room-title " + theme}>
                         <h1>Sala {title} </h1>
                         {
                             questions.length > 0 && (
@@ -99,7 +99,7 @@ export function Room() {
                         }
                     </div>
 
-                    <form onSubmit={handleSendQuestion}>
+                    <form onSubmit={handleSendQuestion} className={theme}>
                         <textarea
                             placeholder="O que você gostaria de perguntar?"
                             onChange={event => setNewQuestion(event.target.value)}

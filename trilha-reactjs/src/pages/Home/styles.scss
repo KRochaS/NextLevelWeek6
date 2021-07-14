@@ -35,12 +35,8 @@ aside {
    
 }
 
-div:nth-child(2) {
-
-  
-    &.dark {
-        background: #2E3034;
-    }
+div.dark {
+    background: #2E3034;
 }
 
 button {
