@@ -2,6 +2,10 @@
 
     &.dark {
         background: #4C4C4C;
+
+        p {
+            color: #FFF;
+        }
     }
     background: #fefefe;
     border-radius: 0.5rem;
@@ -52,7 +56,13 @@
                 margin-left: 0.5rem;
                 color: #737380;
                 font-size: 0.75rem;
+
+                &.dark {
+                    color: #D3D3D3;
+                }
             }
+
+           
         }
 
         > div { 
@@ -67,6 +77,12 @@
             transition: filter 0.2s;
 
             &.like-button {
+
+                &.dark {
+                    svg path {
+                        stroke: #d3d3d3;
+                    }
+                }
                 display: flex;
                 align-items: flex-end;
                 color: #737380;
