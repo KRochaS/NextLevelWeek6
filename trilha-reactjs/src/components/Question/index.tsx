@@ -32,13 +32,13 @@ export function Question({
             
            
         ) +' '+ theme}>
-            <p>
+            <p className={theme}>
                 {content}
             </p>
             <footer>
                 <div className="user-info">
                     <img src={author.avatar} alt={author.name} />
-                    <span> {author.name} </span>
+                    <span className={theme}> {author.name} </span>
                 </div>
                 <div>
 
