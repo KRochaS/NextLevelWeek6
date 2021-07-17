@@ -22,7 +22,17 @@ aside {
         margin-top: 1rem;
         color: #f8f8f8;
     }
+
+    &.dark {
+        
+        background: #483C67;
+    
+    }
+
 }
+
+
+
 main {
     flex: 8;
     padding: 0 2rem;
@@ -41,6 +51,16 @@ main {
     align-items: stretch;
     text-align: center;
 
+    &.dark {
+        h2 {
+            color: #fff;
+        }
+
+        p {
+            color: #D3D3D3;
+        }
+    }
+
     > img {
         align-self: center;
     }
@@ -52,6 +72,21 @@ main {
     }
 
     form {
+
+
+        &.dark {
+            input[type="text"] {
+                background-color : #4C4C4C;
+                color: #FFF;
+              }
+
+            button {
+                background-color: #483C67;
+            }
+
+           
+        }
+
         input {
             height: 3.125rem;
             border-radius: 0.5rem;
@@ -77,6 +112,7 @@ main {
            color: #e559f9;
        }
     }
+    
 }
 
 .create-room {
