@@ -1,7 +1,7 @@
 import './styles.scss';
 
 import { FormEvent, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 import logoImg from '../../assets/images/logo.svg';
 import logoDarkImg from '../../assets/images/logo-dark.svg';
@@ -78,9 +78,9 @@ export function Room() {
 
     return (
         <div id="page-room" className={theme} >
-            <header className={"col-12 "+ theme }>
+            <header className={"col-12 " + theme}>
                 <div className="content">
-                    <img src={theme === 'light'? logoImg : logoDarkImg} alt="Letmeask" />
+                    <Link to="/"> <img src={theme === 'light' ? logoImg : logoDarkImg} alt="Letmeask" /></Link>
 
                     <RoomCode code={roomId} />
 
@@ -135,9 +135,9 @@ export function Room() {
                                     >
 
                                         {
-                                            !question.isAnswered && (
+                                            !question.isAnswered && user && (
                                                 <button
-                                                    className={`like-button ${question.likeId ? 'liked' : ''} `+ theme }
+                                                    className={`like-button ${question.likeId ? 'liked' : ''} ` + theme}
                                                     type="button"
                                                     aria-label="Marcar como gostei"
                                                     onClick={() => handleLikeQuestion(question.id, question.likeId)}
