@@ -20,7 +20,7 @@
             justify-content: space-between;
             align-items: center;
 
-            > img {
+            > a img {
                 max-height: 2.813rem;
             }
 
@@ -94,8 +94,10 @@
             form {
 
                 &.dark {
+                   
                     textarea {
                         background: #4C4C4C;
+                        color: #FFF;
                     }
 
                     .form-footer {
