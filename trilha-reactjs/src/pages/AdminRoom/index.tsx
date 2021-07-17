@@ -1,17 +1,19 @@
 import './styles.scss';
 
-import { useHistory, useParams } from 'react-router-dom';
+import { Link, useHistory, useParams } from 'react-router-dom';
 
 import answerImg from '../../assets/images/answer.svg';
 import checkImg from '../../assets/images/check.svg';
 import deleteImg from '../../assets/images/delete.svg';
 import logoImg from '../../assets/images/logo.svg';
+import logoDarkImg from '../../assets/images/logo-dark.svg';
 import powerOff from '../../assets/images/powerOff.svg';
 import { Button } from '../../components/Button';
 import { Question } from '../../components/Question';
 import { RoomCode } from '../../components/RoomCode';
 import { useRoom } from '../../hooks/useRoom';
 import { database } from '../../services/firebase';
+import { useTheme } from '../../hooks/useTheme';
 
 
 type RoomParams = {
@@ -23,6 +25,7 @@ export function AdminRoom() {
     const params = useParams<RoomParams>();
     const roomId = params.id;
     const history = useHistory();
+    const { theme } = useTheme();
 
 
 
@@ -58,11 +61,11 @@ export function AdminRoom() {
     }
 
     return (
-        <div id="page-room">
+        <div id="page-room" className={theme}>
             <header>
                 <div className="content">
-                    <img src={logoImg} alt="Letmeask" />
-                    <div>
+                   <Link to="/"> <img src={theme === 'light' ? logoImg : logoDarkImg} alt="Letmeask" /></Link> 
+                    <div className={theme}>
                         <RoomCode code={roomId} />
                         <span className="d-none d-lg-block d-md-block">
                             <Button isOutlined onClick={handleEndRoom}> Encerrar Sala</Button>
@@ -76,7 +79,7 @@ export function AdminRoom() {
 
             <main className="col-12 p-3 d-flex flex-column align-items-center h-100">
                 <div className="container">
-                    <div className="room-title">
+                <div className={"room-title " + theme}>
                         <h1>Sala {title} </h1>
                         {
                             questions.length > 0 && (
@@ -87,7 +90,7 @@ export function AdminRoom() {
 
 
 
-                    <div className="question-list">
+                    <div className={"question-list " + theme}>
                         {
                             questions.map((question) => {
                                 return (

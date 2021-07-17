@@ -1,5 +1,16 @@
 #page-room {
     min-height: 100vh;
+
+    
+    &.dark {
+        background: #2E3034;
+
+        .alert-info {
+           
+         color:  #FFF;
+        }
+    }
+    
     header {
         padding: 1.5rem;
         border-bottom: 1px solid #e2e2e2;
@@ -11,7 +22,7 @@
             justify-content: space-between;
             align-items: center;
 
-            > img {
+            > a img {
                 max-height: 2.813rem;
             }
 
@@ -28,6 +39,16 @@
                 width: 1.125rem;
                 background: transparent;
                 border: none;
+            }
+
+            .dark {
+                .button.outlined {
+                    background: #483C67;
+                    border: 0.063rem solid #483C67;
+                    color: #FFF;
+
+                }
+
             }
         }
     }
@@ -58,6 +79,16 @@
                     color: #fff;
                     font-weight: 500;
                     font-size: 0.875rem;
+                }
+
+                &.dark {
+                    h1 {
+                        color: #FFF;
+                    }
+
+                    span {
+                        background: #63407C;
+                    }
                 }
             }
     
@@ -123,6 +154,8 @@
                     pointer-events: none;
                   }
             }
+
+           
         }
 
         .alert-info {
