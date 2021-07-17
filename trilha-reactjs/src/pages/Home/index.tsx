@@ -13,6 +13,7 @@ import { Button } from '../../components/Button';
 import { useAuth } from '../../hooks/useAuth';
 import { database } from '../../services/firebase';
 import { useTheme } from '../../hooks/useTheme';
+import { RoomCode } from '../../components/RoomCode';
 
 export function Home() {
     const history = useHistory();
@@ -97,6 +98,12 @@ export function Home() {
                             <Button type="submit">
                                 Entrar na sala
                             </Button>
+
+
+                            <div className="d-flex justify-content-center codigo-existente">
+                           Código: -Meq4wRvdmZjodgnq0x_
+                        </div>
+                        
                         </form>
                     </div>
                 </main>
