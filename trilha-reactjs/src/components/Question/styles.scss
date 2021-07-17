@@ -6,6 +6,27 @@
         p {
             color: #FFF;
         }
+
+        &.highlighted {
+            background: #352f47;
+            border: 0.063rem solid #835afd;
+    
+            footer .user-info span {
+                color: #fefefe;
+            }
+        }
+
+        &.answered {
+            background: #353636;
+        }
+
+        button {
+            &:hover {
+                filter : brightness(0.3);
+            }
+        }
+
+        
     }
     background: #fefefe;
     border-radius: 0.5rem;
@@ -24,6 +45,7 @@
             color: #29292e;
         }
     }
+
 
     
     &.answered {
@@ -81,6 +103,11 @@
                 &.dark {
                     svg path {
                         stroke: #d3d3d3;
+                    }
+                    .question-list.dark {
+                        button {
+                            border: 1px solid #D3D3D3;
+                        }
                     }
                 }
                 display: flex;
