@@ -5,15 +5,14 @@ import { useHistory } from 'react-router-dom';
 
 import googleIconImg from '../../assets/images/google-icon.svg';
 import illustration from '../../assets/images/illustration.svg';
+import logoDarkImg from '../../assets/images/logo-dark.svg';
+import logoImg from '../../assets/images/logo.svg';
 import moon from '../../assets/images/moon.svg';
 import sun from '../../assets/images/sun.svg';
-import logoImg from '../../assets/images/logo.svg';
-import logoDarkImg from '../../assets/images/logo-dark.svg';
 import { Button } from '../../components/Button';
 import { useAuth } from '../../hooks/useAuth';
-import { database } from '../../services/firebase';
 import { useTheme } from '../../hooks/useTheme';
-import { RoomCode } from '../../components/RoomCode';
+import { database } from '../../services/firebase';
 
 export function Home() {
     const history = useHistory();
