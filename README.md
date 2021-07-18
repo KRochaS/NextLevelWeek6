@@ -12,8 +12,6 @@
    <img src="https://img.shields.io/badge/-ReactJS-483C67?style=flat&logoColor=white" />
    
    <img src="https://img.shields.io/badge/-Typescript-483C67?style=flat&logoColor=white" />
-
-   <img src="https://img.shields.io/badge/-SCSS-483C67?style=flat&logoColor=white" />
   
    <img src="https://img.shields.io/badge/-PWA-483C67?style=flat&logoColor=white" />
 </p>
@@ -45,3 +43,4 @@ Desenvolvido durante a **[Next Level Week Together](https://nextlevelweek.com/)*
      - [x] Mudança de tema (Dark e Light)
      - [x] Responsividade
      - [x] PWA
+     - [x] Reorganização de pastas e arquivos
