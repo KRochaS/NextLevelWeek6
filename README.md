@@ -49,10 +49,11 @@ Desenvolvido durante a **[Next Level Week Together](https://nextlevelweek.com/)*
 
 ## :iphone: Layout Responsivo e PWA
 <p align="center">
-   <img src="https://github.com/KRochaS/NextLevelWeek6/blob/main/.github/responsivo-1.jpg" height="500"/>
-   <img src="https://github.com/KRochaS/NextLevelWeek6/blob/main/.github/responsivo-2.jpg" height="500"/>
-   <img src="https://github.com/KRochaS/NextLevelWeek6/blob/main/.github/responsivo-3.jpg" height="500"/>
-   <img src="https://github.com/KRochaS/NextLevelWeek6/blob/main/.github/pwa.gif" height="500"/>
+   <img src="https://github.com/KRochaS/NextLevelWeek6/blob/main/.github/responsivo-1.jpg" height="600"/>
+   <img src="https://github.com/KRochaS/NextLevelWeek6/blob/main/.github/responsivo-2.jpg" height="600"/>
+  <br/>
+   <img src="https://github.com/KRochaS/NextLevelWeek6/blob/main/.github/responsivo-3.jpg" height="600"/>
+   <img src="https://github.com/KRochaS/NextLevelWeek6/blob/main/.github/pwa.gif" height="600"/>
 </p>
 
 
