@@ -24,6 +24,38 @@
 ## :bar_chart: Projeto
 Desenvolvido durante a **[Next Level Week Together](https://nextlevelweek.com/)**, da Rocketseat ministrado por Diego Fernandes, o Letmeask é perfeito para criadores de conteúdos poderem criar salas de Q&A com o seu público, de uma forma muito organizada e democrática.
 
+## :books: Tecnologias e libs utilizadas  
+
+- [React](https://pt-br.reactjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [SCSS](https://sass-lang.com/)
+- [Firebase](https://firebase.google.com/)
+
+## :sunny: Layout Web - Light Mode
+
+<p align="center">
+  <img src="https://github.com/KRochaS/NextLevelWeek6/blob/main/.github/light-1.PNG" width="720" >
+  <img src="https://github.com/KRochaS/NextLevelWeek6/blob/main/.github/light-2.png?raw=true" width="720" >
+  <img src="https://github.com/KRochaS/NextLevelWeek6/blob/main/.github/light-3.png" width="720" >
+</p>
+
+## :new_moon: Layout Web - Dark Mode
+
+<p align="center">
+  <img src="https://github.com/KRochaS/NextLevelWeek6/blob/main/.github/dark-1.png" width="720" >
+  <img src="https://github.com/KRochaS/NextLevelWeek6/blob/main/.github/dark-2.png" width="720" >
+  <img src="https://github.com/KRochaS/NextLevelWeek6/blob/main/.github/dark-3.png" width="720" >
+</p>
+
+## :iphone: Layout Responsivo e PWA
+<p align="center">
+   <img src="https://github.com/KRochaS/NextLevelWeek6/blob/main/.github/responsivo-1.jpg" height="500"/>
+   <img src="https://github.com/KRochaS/NextLevelWeek6/blob/main/.github/responsivo-2.jpg" height="500"/>
+   <img src="https://github.com/KRochaS/NextLevelWeek6/blob/main/.github/responsivo-3.jpg" height="500"/>
+   <img src="https://github.com/KRochaS/NextLevelWeek6/blob/main/.github/pwa.gif" height="500"/>
+</p>
+
+
 ## ⚙️ Funcionalidades
 
 
@@ -46,3 +78,8 @@ Desenvolvido durante a **[Next Level Week Together](https://nextlevelweek.com/)*
      - [x] Responsividade
      - [x] PWA
      - [x] Reorganização de pastas e arquivos
+
+## :link: Link 
+
+https://letmeask-fc6c7.web.app/
+
