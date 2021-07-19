@@ -14,6 +14,8 @@
    <img src="https://img.shields.io/badge/-Typescript-483C67?style=flat&logoColor=white" />
   
    <img src="https://img.shields.io/badge/-PWA-483C67?style=flat&logoColor=white" />
+  
+   <img src="https://img.shields.io/badge/-Firebase-483C67?style=flat&logoColor=white" />
 </p>
 <h4 align="center"> 
     Status: Concluído 🚀
