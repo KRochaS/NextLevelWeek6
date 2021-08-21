@@ -62,6 +62,7 @@ Desenvolvido durante a **[Next Level Week Together](https://nextlevelweek.com/)*
 
   - ADMINISTRADOR DA SALA:
      - [x] Criação de salas Q&A para tirar dúvidas da audiência em tempo real:
+     - [x] Autentificação com a conta do Google
      - [x] Visualização de perguntas
      - [x] Destacar uma pergunta para responder logo em seguida
      - [x] Marcar pergunta como respondida
@@ -70,6 +71,7 @@ Desenvolvido durante a **[Next Level Week Together](https://nextlevelweek.com/)*
      - [x] Encerrar a sala  
 
   - USUÁRIO DA SALA:
+     - [x] Autentificação com a conta do Google
      - [x] Acessar salas já existentes
      - [x] Fazer perguntas em tempo real
      - [x] Curtir perguntas de outros usuários
